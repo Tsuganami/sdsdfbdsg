@@ -1,0 +1,173 @@
+
+        
+
+        body a#outside_link:visited {
+            color: purple !important;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+        body.dark-mode a img {
+            border: 4px solid cyan;
+        }
+        body.light-mode a img {
+            border: 4px solid #FF6600;
+        }
+        body.light-mode .video-container video {
+            border: 4px solid #FF6600;
+        }
+        body.dark-mode .video-container video {
+            border: 4px solid cyan;
+        }
+        body.dark-mode a{
+
+            color: cyan;
+        }
+        body.dark-mode #docker-image {
+            border: 4px solid cyan;
+        }
+        body.light-mode #docker-image {
+            border: 4px solid #FF6600;
+        }
+        body.light-mode a{
+            
+            color: #FF6600;
+        }
+        body.dark-mode h1{
+            text-align: center;
+            color: cyan;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        body.dark-mode table th, 
+        body.dark-mode table td {
+            color: white;
+            background-color: #333;
+        }
+        body.light-mode table th, 
+        body.light-mode table td {
+            color: black;
+            background-color: #fff;
+            border: 1px solid orange; /* Changed border color to orange for light mode */
+        }
+
+        
+
+        
+        body.light-mode h1{
+            text-align: center;
+            color: #FF6600;
+        }
+
+        body.dark-mode h2{
+            text-align: center;
+            color: cyan;
+        }
+        body.light-mode h2{
+            text-align: center;
+            color: #FF6600;
+        }
+
+        body.dark-mode h3{
+            text-align: center;
+            color: cyan;    
+        }
+        body.light-mode h3{
+            text-align: center;
+            color: #FF6600;
+        }
+
+        
+        
+        body.dark-mode {
+            background-color: #070808;
+            color: white;
+        }
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+        #homepage_quote {
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+        #homepage_quote_text {
+            font-style: italic;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .card{
+            border: 4px solid cyan;
+            transition: border-color 0.3s; /* Smooth transition for border color change */
+        }
+        .card:hover {
+            border: 4px solid #5D3B9A; /* Border color changes to purple on hover */
+        }
+        body.light-mode .card {
+            border: 4px solid #FF6600; /* Change for light mode */
+        }
+        body.light-mode .card:hover {
+            border: 4px solid purple; /* Border color changes to purple on hover in light mode */
+        }
+        
+        .placeholder-image {
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #eee; /* Placeholder Color */
+        }
+        th {
+            text-align: center;
+            border: 1px solid cyan;
+            padding: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #docker-image {
+            width: 100%;
+            height: 200px;
+            border: 4px solid cyan;
+        }
+        body.dark-mode td {
+            border: 1px solid cyan;
+            padding: 8px;
+            text-align: left;
+        }
+        body.light-mode td {
+            border: 1px solid cyan;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        .main-content, .sidebar {
+            padding: 20px;
+        }
+        .main-content .card {
+            margin-bottom: 20px;
+        }
+        .sidebar {
+            border-right: 2px solid cyan;
+        }
+        body.light-mode .sidebar {
+            border-right: 2px solid #FF6600; /* Change for light mode */
+        }
+
+        hr {
+            background-color: cyan; /* Correct spelling and property for visibility */
+            border: none;
+            height: 2px; /* Makes the line more visible */
+        }
+        body.light-mode hr {
+            background-color: #FF6600; /* Change for light mode */
+
+        

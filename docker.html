@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Docker - DevOps 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="src.js" defer></script>
+</head>
+<body class="dark-mode">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 sidebar">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Menu</h2>
+                    <button onclick="toggleTheme()" style="background: none; border: none;">
+                        <img id="themeIcon" src="sample.png" alt="Toggle Theme Button" style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="docker.html">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kubernetes.html">Kubernetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="devops.html">DevOps Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contentsubmission.html">Content Submission</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-md-10 main-content">
+                <header>
+                    <h1>Docker</h1>
+                </header>
+                <hr>
+                <div class="row mb-4 justify-content-center">
+                    <div class="col-md-6">
+                        <img id="docker-image" src="dockerpic.jpg" alt="Docker Logo">
+                    </div>
+                    
+                </div>
+                <div>
+                    <p>
+                        
+                        Docker is a powerful tool used for developing, packaging, and deploying applications efficiently.
+                        Docker is a container management service. Docker was released in 2013. It is open-source and
+                        available for different platforms like Windows, macOS, and Linux. Docker is quickly shipping, 
+                        testing, and deploying code. So that it reduces your delay between writing code and running it in 
+                        production. You can create self-contained environments known as containers. That can run consistently on different platforms.
+
+                    </p>
+
+                    <p>
+                        <h3>Containerization</h3>
+
+Containerization is OS-based virtualization that creates multiple virtual units in the userspace, known as Containers. Containers share the same host kernel but are isolated from each other through private namespaces and resource control mechanisms at the OS level. Container-based Virtualization provides a different level of abstraction in terms of virtualization and isolation when compared with hypervisors. Hypervisors use a lot of hardware which results in overhead in terms of virtualizing hardware and virtual device drivers. A full operating system (e.g -Linux, Windows) runs on top of this virtualized hardware in each virtual machine instance. 
+But in contrast, containers implement isolation of processes at the operating system level, thus avoiding such overhead. These containers run on top of the same shared operating system kernel of the underlying host machine and one or more processes can be run within each container. In containers you don’t have to pre-allocate any RAM, it is allocated dynamically during the creation of containers while in VMs you need to first pre-allocate the memory and then create the virtual machine. Containerization has better resource utilization compared to VMs and a short boot-up process. It is the next evolution in virtualization. 
+                    </p>
+                    
+                </div>
+
+                <!-- Table -->
+                <h3>VIRTUAL MACHINE vs DOCKER</h3>
+                <table>
+                    <tr>
+                        <th>Virtual Machine</th>
+                        <th>Docker</th>
+                    </tr>
+                    <tr>
+                        <td>Virtual machines run on a virtual hardware and guest OS will be loaded in its own memory.</td>
+                        <td>Guests share the same OS, which is the Host OS, which is loaded in the physical memory.</td>
+                    </tr>
+                    <tr>
+                        <td>Communication between guests are through network devices, may be software.</td>
+                        <td>Communication between guests is through pipes, sockets, bridges etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Security depends on the hypervisor.</td>
+                        <td>Lacks security measures.</td>
+                    </tr>
+                    <tr>
+                        <td>More overhead due to its complexity.</td>
+                        <td>Less overhead as it is lightweight containers.</td>
+                    </tr>
+                    <tr>
+                        <td>Sharing of libraries and files are not possible.</td>
+                        <td>Sharing of file possible (Ex: using SCP command in LINUX).</td>
+                    </tr>
+                    <tr>
+                        <td>Takes time in booting.</td>
+                        <td>Faster booting.</td>
+                    </tr>
+                    <tr>
+                        <td>Uses more memory as it has to store the complete OS for each guest.</td>
+                        <td>Less memory usage, as it shares the Host OS.</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Resources:</span>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a id="outside_link" href="https://www.docker.com/">Docker Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://kubernetes.io/">Kubernetes Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://www.atlassian.com/devops">Atlassian DevOps</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

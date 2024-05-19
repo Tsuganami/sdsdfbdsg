@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Experience - DevOps 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="src.js" defer></script>
+</head>
+<body class="dark-mode">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 sidebar">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Menu</h2>
+                    <button onclick="toggleTheme()" style="background: none; border: none;">
+                        <img id="themeIcon" src="sample.png" alt="Toggle Theme Button" style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="docker.html">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Kubernetes.html">Kubernetes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="devops.html">DevOps Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contentsubmission.html">Content Submission</a></li>
+                </ul>
+            </nav>
+            <!-- Main Content -->
+            <div class="col-md-10 main-content">
+                <header>
+                    <h1>DevOps Experience</h1>
+                </header>
+                <hr>
+                <p>DevOps is a development methodology that integrates software development (Dev) and IT operations (Ops), aiming to shorten the development lifecycle and deliver high-quality software continuously. This approach emphasizes collaboration, communication, and automation throughout the entire software development process. By breaking down silos between development and operations teams, DevOps fosters a culture of shared responsibility, which leads to faster and more reliable software releases. One of the core principles of DevOps is the implementation of continuous integration and continuous delivery (CI/CD) pipelines, which automate the process of building, testing, and deploying applications. This automation reduces the risk of human error, enhances consistency, and enables teams to respond quickly to changes and user feedback.</p>
+                <p>Another critical aspect of DevOps is the use of infrastructure as code (IaC),
+                which allows infrastructure to be managed and provisioned through code rather than 
+                manual processes. Tools like Ansible, Terraform, and Chef are commonly used to 
+                automate infrastructure provisioning, making it easier to scale and manage environments.
+                Monitoring and logging are also essential components of the DevOps pipeline,
+                providing real-time insights into application performance and enabling
+                proactive issue resolution. Moreover, DevOps promotes a culture of
+                continuous improvement, encouraging teams to regularly review processes,
+                gather feedback, and implement enhancements. This iterative approach
+                not only improves the quality of the software but also increases
+                overall efficiency and innovation within the organization.
+                For more detailed information, you can refer to resources like <a id="outside_link" href="https://www.geeksforgeeks.org/devops-tutorial/" class="visited-link">Geeks for Geeks</a>, <a id="outside_link" href="https://www.atlassian.com/solutions/devops/guides" class="visited-link">Atlassian's DevOps Guide</a>, and <a id="outside_link" href="https://en.wikipedia.org/wiki/DevOps" class="visited-link">Wikipedia's DevOps page</a>.</p>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <table>
+                            <tr class="header-row">
+                                <th class="area-header">Area</th>
+                                <th>ID</th>
+                                <th>Initial level (1)</th>
+                                <th>Repeatable level (2)</th>
+                                <th>Defined level (3)</th>
+                                <th>Managed level (4)</th>
+                                <th>Optimized level (5)</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" class="area">TECHNOLOGY</td>
+                                <td>T1</td>
+                                <td>Environments are provisioned manually</td>
+                                <td>All environment configurations are externalized and versioned</td>
+                                <td>Virtualization used if applicable</td>
+                                <td>All environments managed effectively</td>
+                                <td>Environment provisioning fully automated</td>
+                            </tr>
+                            <tr>
+                                <td>T2</td>
+                                <td>Manual tests or minimal automation</td>
+                                <td>Functional test automation</td>
+                                <td>Triggered automated tests</td>
+                                <td>Smoked tests and dashboard shared with Op.</td>
+                                <td>Chaos Monkey</td>
+                            </tr>
+                            <tr>
+                                <td>T3</td>
+                                <td>Data migration un-versioned and performed manually</td>
+                                <td>Changes to DB done with automated scripts versioned with application</td>
+                                <td>DB changes performed automatically as part of deployment process</td>
+                                <td>DB upgrades and rollbacks tested with every deployment</td>
+                                <td>Feedback from DB performance after each release</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="video-container mb-4" style="display: inline-block;">
+                    <video controls poster="thumbnail.png" style="width: 100%; height: 100%;">
+                        <source src="DevOps CI_CD.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    
+                    <button class="btn btn-primary" onclick="printTranscript()">Show Video Transcript</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Resources:</span>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a id="outside_link" href="https://www.docker.com/">Docker Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://kubernetes.io/">Kubernetes Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://www.atlassian.com/devops">Atlassian DevOps</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

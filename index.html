@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <script src="src.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DevOps 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- Custom Made CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body class="dark-mode">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 sidebar">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Menu</h2>
+                    <button onclick="toggleTheme()" style="background: none; border: none;">
+                        <img id="themeIcon" src="sample.png" alt="Toggle Theme Button" style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+                <hr>
+                
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="docker.html">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kubernetes.html">Kubernetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="devops.html">DevOps Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contentsubmission.html">Content Submission</a></li>
+                </ul>
+            </nav>
+            <!-- Main Content -->
+            <div class="col-md-9 main-content">
+                <header>
+                    <h1>Home</h1>
+                </header>
+                
+                <hr>
+                <div class="quote" id="homepage_quote">
+                <aside>
+                    <p id="homepage_quote_text">"I wanna learn more about DevOps, because it seems kinda cool" - Me, 2 months ago</p>
+                </aside>
+                </div>
+                <section>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button onclick="window.location.href='docker.html';" style="background: none; border: none; padding: 0;">
+                                <div class="card">
+                                    <img src="Picture1.jpg" class="card-img-top" alt="Docker Logo with drawing of a Container">
+                                    <div class="card-footer text-center" style="color: black;"><strong>The basics of Docker</strong></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button onclick="window.location.href='devops.html';" style="background: none; border: none; padding: 0;">
+                                <div class="card">
+                                    <img src="Picture3.png" class="card-img-top" alt="Picture describes DevOps development and operations">
+                                    <div class="card-footer text-center" style="color: black;"><strong>The philosophy of DevOps</strong></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-md-4">
+                            <button onclick="window.location.href='kubernetes.html';" style="background: none; border: none; padding: 0;">
+                                <div class="card">
+                                    <img src="Picture2.png" class="card-img-top" alt="Logo fo Kubernetes">
+                                    <div class="card-footer text-center" style="color: black;"><strong>The basics of Kubernetes</strong></div>
+                                </div>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </section>
+                <article>
+                <p>
+                    Hello, dear user, the goal of this website is to share knowledge about DevOps. 
+                    empowering you with essential skills to streamline software development 
+                    and operations. 
+                </p>
+                </article>
+            
+                <p>
+                    <figure>
+                    <h3>
+                        What is DevOps?
+                    </h3>
+                    </figure>
+                    <p>
+                    DevOps is a practice that combines software development and operations to 
+                    create a culture of collaboration, communication, and automation. 
+                    It's a practice that focuses on the integration of development and operations 
+                    teams to ensure that software is delivered to the customer with minimal downtime 
+                    and high quality.
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Resources:</span>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a id="outside_link" href="https://www.docker.com/">Docker Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://kubernetes.io/">Kubernetes Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://www.atlassian.com/devops">Atlassian DevOps</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

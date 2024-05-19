@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content Submission - DevOps 101</title>
+    <script src="src.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .main-content {
+            background-image: url('background.png');
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 sidebar">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Menu</h2>
+                    <button onclick="toggleTheme()" style="background: none; border: none;">
+                        <img id="themeIcon" src="sample.png" alt="Toggle Theme Button" style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="docker.html">Docker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kubernetes.html">Kubernetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="devops.html">DevOps Experience</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contentsubmission.html">Content Submission</a></li>
+                </ul>
+            </nav>
+            <!-- Main Content -->
+            <div class="col-md-10 main-content">
+                <header>
+                    <h1>Content Submission Form</h1>
+                </header>
+                <hr>
+                <p>If you want to submit new content to this site, please fill out this form:</p>
+                <form action="mailto:AndreiChubenko@proton.me" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter name" style="max-width: 300px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter email" style="max-width: 350px;">
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Type of Content</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contentType" id="video" value="video">
+                            <label class="form-check-label" for="video">Video</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contentType" id="picture" value="picture">
+                            <label class="form-check-label" for="picture">Picture</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contentType" id="article" value="article">
+                            <label class="form-check-label" for="article">Article</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="contentType" id="code" value="code">
+                            <label class="form-check-label" for="code">Code</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="contentTextarea">Your Content</label>
+                        <textarea class="form-control" id="contentTextarea" rows="3"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="anonymousCheck">
+                        <label class="form-check-label" for="anonymousCheck">Publish Anonymously</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Resources:</span>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a id="outside_link" href="https://www.docker.com/">Docker Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://kubernetes.io/">Kubernetes Official</a></li>
+                <li class="list-inline-item"><a id="outside_link" href="https://www.atlassian.com/devops">Atlassian DevOps</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
