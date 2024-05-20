@@ -1,10 +1,9 @@
 
         
 
-        body a#outside_link:visited {
+        body a.outside_link:visited {
             color: purple !important;
         }
-
         a {
             text-decoration: underline;
         }
